@@ -1,0 +1,30 @@
+{
+	"mainProjects": [
+		{
+			"name": "Zecurion",
+			"description": "This is cool one!",
+			"link": "axshare",
+			"date": "2015-09"
+		},
+		{
+			"name": "Another one",
+			"description": "This is cool too!",
+			"link": "axshare",
+			"date": "2014-08"
+		}
+	],
+	"sideProjects": [
+		{
+			"name": "BHSAD",
+			"description": "Ходил в Британку, <a href='#'>вот результат</a>",
+			"type": "course",
+			"date": "2014-09"
+		},
+		{
+			"name": "Another one",
+			"description": "This is cool too!",
+			"type": "side",
+			"date": "2015-10"
+		}
+	]
+}
