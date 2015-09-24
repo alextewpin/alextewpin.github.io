@@ -5,4 +5,7 @@ html, body {
 
 .project {
 	margin: 20px;
+	&.project_type_main {
+		background-color: #ccc;
+	}
 }

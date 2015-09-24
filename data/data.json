@@ -1,30 +1,86 @@
 {
-	"mainProjects": [
+	"feed": [
 		{
-			"name": "Zecurion",
-			"description": "This is cool one!",
-			"link": "axshare",
+			"name_ru": "Зекурион",
+			"description_ru": "Описание",
+			"type": "main",
 			"date": "2015-09"
 		},
 		{
-			"name": "Another one",
-			"description": "This is cool too!",
-			"link": "axshare",
-			"date": "2014-08"
-		}
-	],
-	"sideProjects": [
-		{
-			"name": "BHSAD",
-			"description": "Ходил в Британку, <a href='#'>вот результат</a>",
-			"type": "course",
-			"date": "2014-09"
+			"description_ru": "Интенсив в Британке",
+			"type": "side",
+			"date": "2015-08"
 		},
 		{
-			"name": "Another one",
-			"description": "This is cool too!",
+			"description_ru": "Учил JS, писал Магику",
 			"type": "side",
-			"date": "2015-10"
+			"date": "2015-05"
+		},
+		{
+			"description_ru": "Устроился в Зекурион",
+			"type": "side",
+			"date": "2015-02"
+		},
+		{
+			"name_ru": "Проноунс нэймс",
+			"description_ru": "Описание",
+			"type": "main",
+			"date": "2014-12"
+		},
+		{
+			"description_ru": "D3",
+			"type": "side",
+			"date": "2014-11"
+		},
+		{
+			"name_ru": "Интерфейс тренировок для Воркла",
+			"description_ru": "Описание",
+			"type": "main",
+			"date": "2014-08"
+		},
+		{
+			"description_ru": "Учил Objective-C, писал Табулу",
+			"type": "side",
+			"date": "2014-07"
+		},
+		{
+			"description_ru": "Ушел на вольные хлеба, работа в ИП",
+			"type": "side",
+			"date": "2014-02"
+		},
+		{
+			"name_ru": "QR Pay",
+			"description_ru": "Описание",
+			"type": "main",
+			"date": "2013-08"
+		},
+		{
+			"name_ru": "COX Bet",
+			"description_ru": "Описание",
+			"type": "main",
+			"date": "2013-05"
+		},
+		{
+			"name_ru": "Теле 2",
+			"description_ru": "Описание",
+			"type": "main",
+			"date": "2013-03"
+		},
+		{
+			"name_ru": "Блицкриг 3",
+			"description_ru": "Описание",
+			"type": "main",
+			"date": "2012-11"
+		},
+		{
+			"description_ru": "Устроился в Ингениус",
+			"type": "side",
+			"date": "2012-05"
+		},
+		{
+			"description_ru": "Закончил Британку",
+			"type": "side",
+			"date": "2011-06"
 		}
 	]
 }

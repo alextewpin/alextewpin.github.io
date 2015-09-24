@@ -2,28 +2,48 @@ var data
 
 var App = React.createClass({displayName: "App",
 	getInitialState: function () {
-		var feed = [];
-		for (category in this.props.data) {
-			this.props.data[category].forEach(function(item){
-				if (category == "mainProjects") {
-					item.type = "main"
-				}
-				item.date = new Date(item.date);
-				feed.push(item);
-			}, this);
+		var yearsHash = {};
+		var yearsArray = []
+
+		this.props.data.feed.forEach(function(item){
+			item.date = new Date(item.date);
+			if (!yearsHash[item.date.getFullYear()]) {
+				yearsHash[item.date.getFullYear()] = [];
+			}
+			yearsHash[item.date.getFullYear()].push(item);
+		})
+
+		for (year in yearsHash) {
+			yearsArray.push(year);
 		}
-		feed.sort(function(a, b) {
-			return new Date(b.date) - new Date(a.date);
+
+		yearsArray.sort(function(a, b){
+			return b - a;
 		});
-	    return {
-	        feed: feed  
-	    };
+
+		yearsArray = yearsArray.map(function(year){
+			var yearObject = {};
+			yearObject.year = year;
+			yearObject.content = yearsHash[year];
+			return yearObject;
+		})
+
+		return {
+			years: yearsArray
+		};
 	},
 	render: function() {
 		return (
 			React.createElement("div", null, 
-				this.state.feed.map(function(item){
-					return React.createElement(Project, React.__spread({},  item))
+				this.state.years.map(function(year){
+					return (
+						React.createElement("div", {className: "year"}, 
+							React.createElement("div", null, year.year), 
+							year.content.map(function(item){
+								return React.createElement(Project, React.__spread({},  item))
+							}, this)
+						)
+					)
 				}, this)
 			)
 		)
@@ -35,8 +55,8 @@ var Project = React.createClass({displayName: "Project",
 		var typeClass = "project project_type_" + this.props.type;
 		return (
 			React.createElement("div", {className: typeClass}, 
-				React.createElement("div", {className: "project__name"}, this.props.name), 
-				React.createElement("div", {className: "project__description"}, this.props.description), 
+				React.createElement("div", {className: "project__name"}, this.props.name_ru), 
+				React.createElement("div", {className: "project__description"}, this.props.description_ru), 
 				React.createElement("div", {className: "project__date"}, this.props.date.toString()), 
 				React.createElement("div", {className: "project__link"}, this.props.link)
 			)
