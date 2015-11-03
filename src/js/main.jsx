@@ -1,11 +1,18 @@
-var data
+var Route = ReactRouter.Route;
+var Link = ReactRouter.Link;
+var NotFoundRoute = ReactRouter.NotFoundRoute;
+var DefaultRoute = ReactRouter.DefaultRoute;
+var RouteHandler = ReactRouter.RouteHandler;
+var Redirect = ReactRouter.Redirect;
+
+var data = {}
 
 var App = React.createClass({
 	getInitialState: function () {
 		var yearsHash = {};
 		var yearsArray = []
 
-		this.props.data.feed.forEach(function(item){
+		data.feed.forEach(function(item){
 			item.date = new Date(item.date);
 			if (!yearsHash[item.date.getFullYear()]) {
 				yearsHash[item.date.getFullYear()] = [];
@@ -34,14 +41,53 @@ var App = React.createClass({
 	},
 	render: function() {
 		return (
-			<div>
-				{this.state.years.map(function(year){
+			<div className="wrapper">
+				<div className="page">
+					<div className="header">
+						<div className="title">
+							<div className="title__title">Александр Тюпин</div>
+							<div className="title__subtitle">Дизайнер интерфейсов</div>
+							<div className="title__about">
+								{data.about.map(function(p){
+									return <p>{p}</p>
+								})}
+							</div>
+							<div className="title__contact">Почта: alex.tewpin@gmail.com. Скайп: alextewpin</div>
+						</div>
+						<div className="lang">&nbsp;</div>
+					</div>
+					<div className="nav">
+						<Link to='works/?' activeClassName='nav__button_selected' className='nav__button'>Портфолио</Link>
+						<Link to='cv/?' activeClassName='nav__button_selected' className='nav__button'>Резюме</Link>
+					</div>
+					<RouteHandler {...this.state}/>
+					<div className="footer">
+						<div className="footer__years">2011...2015</div>
+						<div className="footer__mail">
+							<a href="mailto:alex.tewpin@gmail.com">alex.tewpin@gmail.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		)
+	}
+})
+
+var Works = React.createClass({
+	render: function() {
+		return (
+			<div className="feed">
+				{this.props.years.map(function(year, i){
 					return (
-						<div className="year">
-							<div>{year.year}</div>
-							{year.content.map(function(item){
-								return <Project {...item} />
-							}, this)}
+						<div className="feed-block">
+							<div className="feed-block__projects">
+								{year.content.map(function(item){
+									return (<div className="feed-block__project">
+											<Project {...item} />
+										</div>)
+								}, this)}
+							</div>
+							<div className="feed-block__year">{year.year}</div>
 						</div>
 					)
 				}, this)}
@@ -50,20 +96,48 @@ var App = React.createClass({
 	}
 })
 
-var Project = React.createClass({
+var CV = React.createClass({
 	render: function() {
-		var typeClass = "project project_type_" + this.props.type;
 		return (
-			<div className={typeClass}>
-				<div className="project__name">{this.props.name_ru}</div>
-				<div className="project__description">{this.props.description_ru}</div>
-				<div className="project__date">{this.props.date.toString()}</div>
-				<div className="project__link">{this.props.link}</div>
+			<div className="feed">
+				CV
 			</div>
 		)
 	}
 })
 
-$.get("data/data.json", function(data){
-	React.render(<App data={data}/>, document.body);
+var Project = React.createClass({
+	render: function() {
+		var typeClass = "project project_type_" + this.props.type;
+		var icon
+		if (this.props.icon) {
+			var backgroundPosition = (this.props.icon - 1) * 16
+			iconStyle = {
+				backgroundPosition: backgroundPosition + 'px 0px'
+			}
+			icon = <div className="project__icon" style={iconStyle}></div>
+		}
+		return (
+			<div className={typeClass}>
+				<div className="project__name" dangerouslySetInnerHTML={{__html: this.props.name_ru}}></div>
+				<div className="project__description" dangerouslySetInnerHTML={{__html: this.props.description_ru}}></div>
+			</div>
+		)
+	}
+})
+
+var routes = (
+	<Route name='app' path='/' handler={App} >
+		<Redirect from="/" to="/works" />
+		<Route name='works/?' handler={Works} />
+		<Route name='cv/?' handler={CV} />
+		<NotFoundRoute handler={Works}/>
+	</Route>
+);
+
+$.get("data/data.json", function(jsonData){
+	data = jsonData;
+	ReactRouter.run(routes, function (Handler) {
+		React.render(<Handler />, document.body);
+	});
 })

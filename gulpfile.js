@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 
 var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 var react = require('gulp-react');
 
 var path = {
@@ -21,8 +23,12 @@ gulp.task('html', function(){
 })
 
 gulp.task('sass', function(){
+	var processors = [
+		autoprefixer({browsers: ['last 2 version', '> 2%']})
+	];
 	gulp.src(path.styleSrc)
 		.pipe(sass({outputStyle: 'compressed'}))
+		.pipe(postcss(processors))
 		.pipe(gulp.dest(path.styleDest))
 })
 

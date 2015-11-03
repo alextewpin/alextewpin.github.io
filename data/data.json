@@ -1,86 +1,95 @@
 {
 	"feed": [
 		{
-			"name_ru": "Зекурион",
-			"description_ru": "Описание",
+			"name_ru": "Прототипы, гайдлайны и верстка консоли оператора для Зекуриона",
+			"description_ru": "Зекурион занимается защитой крупных компаний от утечек информации. Продукты, ранее бывшие отдельными модулями были объединены в веб-приложение, где я полностью переработал, оформил и сверстал интерфейс. Кроме того, я разработал гайдлайны по которым программисты легко собирают новые страницы самостоятельно.",
 			"type": "main",
 			"date": "2015-09"
 		},
 		{
-			"description_ru": "Интенсив в Британке",
+			"description_ru": "Прошел <a href=\"http://www.britishdesign.ru/programs/p/uxdesign/\">интенсив по UI/UX</a> в Британской высшей школе дизайна, где вместе с командой предложил концепт новой <a href=\"http://project12480.tilda.ws/page36831.html\">главной страницы Яндекса</a>",
 			"type": "side",
 			"date": "2015-08"
 		},
 		{
-			"description_ru": "Учил JS, писал Магику",
+			"description_ru": "Прокачал JavaScript, написал <a href=\"https://mighty-magika.herokuapp.com\">Магику</a> — справочник по заклинаниям для Dungeons & Dragons",
 			"type": "side",
 			"date": "2015-05"
 		},
 		{
-			"description_ru": "Устроился в Зекурион",
+			"description_ru": "Пришел на полный день в <a href=\"http://www.zecurion.ru\">Зекурион</a>",
 			"type": "side",
 			"date": "2015-02"
 		},
 		{
-			"name_ru": "Проноунс нэймс",
+			"name_ru": "<a href=\"http://xph1kv.axshare.com\">Редизайн сервиса по поиску произношений имен PronounceNames</a>",
 			"description_ru": "Описание",
 			"type": "main",
 			"date": "2014-12"
 		},
 		{
-			"description_ru": "D3",
+			"description_ru": "Сделал интерактивную инфографику на D3 для <a href=\"http://brainwashing.pro/dataviz-online\">курса по визуализации данных</a>",
 			"type": "side",
 			"date": "2014-11"
 		},
 		{
-			"name_ru": "Интерфейс тренировок для Воркла",
+			"name_ru": "<a href=\"http://tdghok.axshare.com\">Интерфейс тренировки продаж</a> для Воркла",
 			"description_ru": "Описание",
 			"type": "main",
 			"date": "2014-08"
 		},
 		{
-			"description_ru": "Учил Objective-C, писал Табулу",
+			"description_ru": "Подучил Objective-C, спроектировал и написал <a href=\"https://github.com/alextewpin/tabula\">Табулу</a>, клиент Двача для iOS",
 			"type": "side",
 			"date": "2014-07"
 		},
 		{
-			"description_ru": "Ушел на вольные хлеба, работа в ИП",
+			"description_ru": "Начал работу в качестве независимого дизайнера",
 			"type": "side",
 			"date": "2014-02"
 		},
 		{
-			"name_ru": "QR Pay",
+			"name_ru": "<a href=\"http://4vpm5v.axshare.com\">Мобильное приложение оплаты покупок с телефона PayQR</a>",
 			"description_ru": "Описание",
 			"type": "main",
 			"date": "2013-08"
 		},
 		{
-			"name_ru": "COX Bet",
+			"name_ru": "<a href=\"http://jh3d26.axshare.com\">Интерфейс букмейкерского сайта «Восход»</a>",
 			"description_ru": "Описание",
 			"type": "main",
 			"date": "2013-05"
 		},
 		{
-			"name_ru": "Теле 2",
+			"description_ru": "Стал руководителем отдела дизайна в Ингениусе",
+			"type": "side",
+			"date": "2013-04"
+		},
+		{
+			"name_ru": "<a href=\"http://6nmm9r.axshare.com\">Прототипы консоли оператора колл-центра</a> для Теле 2",
 			"description_ru": "Описание",
 			"type": "main",
 			"date": "2013-03"
 		},
 		{
-			"name_ru": "Блицкриг 3",
+			"name_ru": "<a href=\"data/blitzkrieg.pdf\">Экспертная оценка</a> и <a href=\"http://kf4bar.axshare.com\">концепты</a> игры «Блицкриг 3» для Нивала",
 			"description_ru": "Описание",
 			"type": "main",
 			"date": "2012-11"
 		},
 		{
-			"description_ru": "Устроился в Ингениус",
+			"description_ru": "Устроился дизайнером интерфейсов в <a href=\"http://igsystems.ru\">Ингениус</a>",
 			"type": "side",
 			"date": "2012-05"
 		},
 		{
-			"description_ru": "Закончил Британку",
+			"description_ru": "Закончил двухлетнее обучние в <a href=\"http://www.britishdesign.ru\">Британской высшей школе дизайна</a>",
 			"type": "side",
 			"date": "2011-06"
 		}
+	],
+	"about": [
+		"Основной инструмент прототипирования — Axure. Неплохо знаком с продуктами Adobe, но предпочитаю Sketch. Знаю HTML/CSS, и немного Java Script с Objective C. Представляю принципы работы, возможности и ограничения веба и мобильных устройств.",
+		"Есть базовые навыки продукт-менеджмента — представляю как строится работа над созданием ПО, что такое MVP, как читать отзывы пользователей и прочее такое. Знаю как работать по скраму."
 	]
 }
