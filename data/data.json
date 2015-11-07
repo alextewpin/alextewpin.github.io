@@ -7,7 +7,7 @@
 			"date": "2015-09"
 		},
 		{
-			"description_ru": "Прошел <a href=\"http://www.britishdesign.ru/programs/p/uxdesign/\">интенсив по UI/UX</a> в Британской высшей школе дизайна, где вместе с командой предложил концепт новой <a href=\"http://project12480.tilda.ws/page36831.html\">главной страницы Яндекса</a>",
+			"description_ru": "Прошел <a target=\"_blank\" href=\"http://www.britishdesign.ru/programs/p/uxdesign/\">интенсив по UI/UX</a> в Британской высшей школе дизайна, где вместе с командой предложил концепт новой <a target=\"_blank\" href=\"http://project12480.tilda.ws/page36831.html\">главной страницы Яндекса</a>",
 			"type": "side",
 			"date": "2015-08"
 		},
@@ -17,24 +17,22 @@
 			"date": "2015-05"
 		},
 		{
-			"description_ru": "Пришел на полный день в <a href=\"http://www.zecurion.ru\">Зекурион</a>",
+			"description_ru": "Пришел на полный день в <a target=\"_blank\" href=\"http://www.zecurion.ru\">Зекурион</a>",
 			"type": "side",
 			"date": "2015-02"
 		},
 		{
-			"name_ru": "<a href=\"http://xph1kv.axshare.com\">Редизайн сервиса по поиску произношений имен PronounceNames</a>",
-			"description_ru": "Описание",
+			"name_ru": "<a target=\"_blank\" href=\"http://xph1kv.axshare.com\">Редизайн сервиса по поиску произношений имен PronounceNames</a>",
 			"type": "main",
 			"date": "2014-12"
 		},
 		{
-			"description_ru": "Сделал интерактивную инфографику на D3 для <a href=\"http://brainwashing.pro/dataviz-online\">курса по визуализации данных</a>",
+			"description_ru": "Сделал интерактивную инфографику на D3 для <a target=\"_blank\" href=\"http://brainwashing.pro/dataviz-online\">курса по визуализации данных</a>",
 			"type": "side",
 			"date": "2014-11"
 		},
 		{
-			"name_ru": "<a href=\"http://tdghok.axshare.com\">Интерфейс тренировки продаж</a> для Воркла",
-			"description_ru": "Описание",
+			"name_ru": "<a target=\"_blank\" href=\"http://tdghok.axshare.com\">Интерфейс тренировки продаж</a> для Воркла",
 			"type": "main",
 			"date": "2014-08"
 		},
@@ -49,14 +47,12 @@
 			"date": "2014-02"
 		},
 		{
-			"name_ru": "<a href=\"http://4vpm5v.axshare.com\">Мобильное приложение оплаты покупок с телефона PayQR</a>",
-			"description_ru": "Описание",
+			"name_ru": "<a target=\"_blank\" href=\"http://4vpm5v.axshare.com\">Мобильное приложение оплаты покупок с телефона PayQR</a>",
 			"type": "main",
 			"date": "2013-08"
 		},
 		{
-			"name_ru": "<a href=\"http://jh3d26.axshare.com\">Интерфейс букмейкерского сайта «Восход»</a>",
-			"description_ru": "Описание",
+			"name_ru": "<a target=\"_blank\" href=\"http://jh3d26.axshare.com\">Интерфейс букмейкерского сайта «Восход»</a>",
 			"type": "main",
 			"date": "2013-05"
 		},
@@ -66,30 +62,29 @@
 			"date": "2013-04"
 		},
 		{
-			"name_ru": "<a href=\"http://6nmm9r.axshare.com\">Прототипы консоли оператора колл-центра</a> для Теле 2",
-			"description_ru": "Описание",
+			"name_ru": "<a target=\"_blank\" href=\"http://6nmm9r.axshare.com\">Прототипы консоли оператора колл-центра</a> для Теле 2",
 			"type": "main",
 			"date": "2013-03"
 		},
 		{
-			"name_ru": "<a href=\"data/blitzkrieg.pdf\">Экспертная оценка</a> и <a href=\"http://kf4bar.axshare.com\">концепты</a> игры «Блицкриг 3» для Нивала",
-			"description_ru": "Описание",
+			"name_ru": "<a href=\"assets/files/blitzkrieg.pdf\">Экспертная оценка</a> и <a target=\"_blank\" href=\"http://kf4bar.axshare.com\">концепты</a> игры «Блицкриг 3» для Нивала",
 			"type": "main",
 			"date": "2012-11"
 		},
 		{
-			"description_ru": "Устроился дизайнером интерфейсов в <a href=\"http://igsystems.ru\">Ингениус</a>",
+			"description_ru": "Устроился дизайнером интерфейсов в <a target=\"_blank\" href=\"http://igsystems.ru\">Ингениус</a>",
 			"type": "side",
 			"date": "2012-05"
 		},
 		{
-			"description_ru": "Закончил двухлетнее обучние в <a href=\"http://www.britishdesign.ru\">Британской высшей школе дизайна</a>",
+			"description_ru": "Закончил двухлетнее обучение в <a target=\"_blank\" href=\"http://www.britishdesign.ru\">Британской высшей школе дизайна</a>",
 			"type": "side",
 			"date": "2011-06"
 		}
 	],
 	"about": [
-		"Основной инструмент прототипирования — Axure. Неплохо знаком с продуктами Adobe, но предпочитаю Sketch. Знаю HTML/CSS, и немного Java Script с Objective C. Представляю принципы работы, возможности и ограничения веба и мобильных устройств.",
-		"Есть базовые навыки продукт-менеджмента — представляю как строится работа над созданием ПО, что такое MVP, как читать отзывы пользователей и прочее такое. Знаю как работать по скраму."
+		"Делаю дизайн для продуктов, участвую в их разработке, иногда пишу код самостоятельно. Считаю, что хороший интерфейс в первую очередь быстрый. Знаю как расставлять приоритеты и что говорить разработчикам.",
+		"Живу и работаю в Москве.",
+		"Почта: <a href=\"mailto:alex.tewpin@gmail.com\">alex.tewpin@gmail.com</a>. Скайп: <a href=\"skype:alextewpin?chat\">alextewpin</a>"
 	]
 }

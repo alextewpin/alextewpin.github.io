@@ -40,6 +40,7 @@ var App = React.createClass({displayName: "App",
 		};
 	},
 	render: function() {
+		var currentYear = new Date().getFullYear();
 		return (
 			React.createElement("div", {className: "wrapper"}, 
 				React.createElement("div", {className: "page"}, 
@@ -49,20 +50,19 @@ var App = React.createClass({displayName: "App",
 							React.createElement("div", {className: "title__subtitle"}, "Дизайнер интерфейсов"), 
 							React.createElement("div", {className: "title__about"}, 
 								data.about.map(function(p){
-									return React.createElement("p", null, p)
+									return React.createElement("p", {dangerouslySetInnerHTML: {__html: p}})
 								})
-							), 
-							React.createElement("div", {className: "title__contact"}, "Почта: alex.tewpin@gmail.com. Скайп: alextewpin")
+							)
 						), 
 						React.createElement("div", {className: "lang"}, " ")
 					), 
 					React.createElement("div", {className: "nav"}, 
-						React.createElement(Link, {to: "works/?", activeClassName: "nav__button_selected", className: "nav__button"}, "Портфолио"), 
+						React.createElement(Link, {to: "feed/?", activeClassName: "nav__button_selected", className: "nav__button"}, "Свершения"), 
 						React.createElement(Link, {to: "cv/?", activeClassName: "nav__button_selected", className: "nav__button"}, "Резюме")
 					), 
 					React.createElement(RouteHandler, React.__spread({},  this.state)), 
 					React.createElement("div", {className: "footer"}, 
-						React.createElement("div", {className: "footer__years"}, "2011...2015"), 
+						React.createElement("div", {className: "footer__years"}, "2011...", currentYear), 
 						React.createElement("div", {className: "footer__mail"}, 
 							React.createElement("a", {href: "mailto:alex.tewpin@gmail.com"}, "alex.tewpin@gmail.com")
 						)
@@ -73,7 +73,7 @@ var App = React.createClass({displayName: "App",
 	}
 })
 
-var Works = React.createClass({displayName: "Works",
+var Feed = React.createClass({displayName: "Feed",
 	render: function() {
 		return (
 			React.createElement("div", {className: "feed"}, 
@@ -99,8 +99,8 @@ var Works = React.createClass({displayName: "Works",
 var CV = React.createClass({displayName: "CV",
 	render: function() {
 		return (
-			React.createElement("div", {className: "feed"}, 
-				"CV"
+			React.createElement("div", {className: "cv"}, 
+				"Резюме пока не очень-то и нужно."
 			)
 		)
 	}
@@ -128,10 +128,10 @@ var Project = React.createClass({displayName: "Project",
 
 var routes = (
 	React.createElement(Route, {name: "app", path: "/", handler: App}, 
-		React.createElement(Redirect, {from: "/", to: "/works"}), 
-		React.createElement(Route, {name: "works/?", handler: Works}), 
+		React.createElement(Redirect, {from: "/", to: "/feed"}), 
+		React.createElement(Route, {name: "feed/?", handler: Feed}), 
 		React.createElement(Route, {name: "cv/?", handler: CV}), 
-		React.createElement(NotFoundRoute, {handler: Works})
+		React.createElement(NotFoundRoute, {handler: Feed})
 	)
 );
 

@@ -40,6 +40,7 @@ var App = React.createClass({
 		};
 	},
 	render: function() {
+		var currentYear = new Date().getFullYear();
 		return (
 			<div className="wrapper">
 				<div className="page">
@@ -49,20 +50,19 @@ var App = React.createClass({
 							<div className="title__subtitle">Дизайнер интерфейсов</div>
 							<div className="title__about">
 								{data.about.map(function(p){
-									return <p>{p}</p>
+									return <p dangerouslySetInnerHTML={{__html: p}}></p>
 								})}
 							</div>
-							<div className="title__contact">Почта: alex.tewpin@gmail.com. Скайп: alextewpin</div>
 						</div>
 						<div className="lang">&nbsp;</div>
 					</div>
 					<div className="nav">
-						<Link to='works/?' activeClassName='nav__button_selected' className='nav__button'>Портфолио</Link>
+						<Link to='feed/?' activeClassName='nav__button_selected' className='nav__button'>Свершения</Link>
 						<Link to='cv/?' activeClassName='nav__button_selected' className='nav__button'>Резюме</Link>
 					</div>
 					<RouteHandler {...this.state}/>
 					<div className="footer">
-						<div className="footer__years">2011...2015</div>
+						<div className="footer__years">2011...{currentYear}</div>
 						<div className="footer__mail">
 							<a href="mailto:alex.tewpin@gmail.com">alex.tewpin@gmail.com</a>
 						</div>
@@ -73,7 +73,7 @@ var App = React.createClass({
 	}
 })
 
-var Works = React.createClass({
+var Feed = React.createClass({
 	render: function() {
 		return (
 			<div className="feed">
@@ -99,8 +99,8 @@ var Works = React.createClass({
 var CV = React.createClass({
 	render: function() {
 		return (
-			<div className="feed">
-				CV
+			<div className="cv">
+				Резюме пока не очень-то и нужно.
 			</div>
 		)
 	}
@@ -128,10 +128,10 @@ var Project = React.createClass({
 
 var routes = (
 	<Route name='app' path='/' handler={App} >
-		<Redirect from="/" to="/works" />
-		<Route name='works/?' handler={Works} />
+		<Redirect from="/" to="/feed" />
+		<Route name='feed/?' handler={Feed} />
 		<Route name='cv/?' handler={CV} />
-		<NotFoundRoute handler={Works}/>
+		<NotFoundRoute handler={Feed}/>
 	</Route>
 );
 

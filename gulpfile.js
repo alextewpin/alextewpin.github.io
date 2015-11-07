@@ -6,15 +6,15 @@ var autoprefixer = require('autoprefixer');
 var react = require('gulp-react');
 
 var path = {
-	htmlSrc:'src/html/*.html',
+	htmlSrc:'source/html/*.html',
 	htmlDest: '.',
-	htmlWatch:'src/html/*.html',
-	styleSrc: 'src/style/main.scss',
+	htmlWatch:'source/html/*.html',
+	styleSrc: 'source/style/main.scss',
 	styleDest: 'build/css',
-	styleWatch: 'src/style/**/*.scss',
-	jsSrc: 'src/js/*.jsx',
+	styleWatch: 'source/style/**/*.scss',
+	jsSrc: 'source/script/*.jsx',
 	jsDest: 'build/js/',
-	jsWatch: 'src/js/*.jsx'
+	jsWatch: 'source/script/*.jsx'
 };
 
 gulp.task('html', function(){
