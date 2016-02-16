@@ -6,36 +6,35 @@ var autoprefixer = require('autoprefixer');
 var react = require('gulp-react');
 
 var path = {
-	htmlSrc:'source/html/*.html',
-	htmlDest: '.',
-	htmlWatch:'source/html/*.html',
-	styleSrc: 'source/style/main.scss',
-	styleDest: 'build/css',
-	styleWatch: 'source/style/**/*.scss',
-	jsSrc: 'source/script/*.jsx',
-	jsDest: 'build/js/',
-	jsWatch: 'source/script/*.jsx'
+  htmlSrc:'source/*.html',
+  htmlDest: '.',
+  htmlWatch:'source/*.html',
+  styleSrc: 'source/main.scss',
+  styleDest: 'build',
+  styleWatch: 'source/*.scss',
+  jsSrc: 'source/*.jsx',
+  jsDest: 'build',
+  jsWatch: 'source/*.jsx'
 };
 
 gulp.task('html', function(){
-	gulp.src(path.htmlSrc)
-		.pipe(gulp.dest(path.htmlDest))
+  gulp.src(path.htmlSrc)
+    .pipe(gulp.dest(path.htmlDest))
 })
 
 gulp.task('sass', function(){
-	var processors = [
-		autoprefixer({browsers: ['last 2 version', '> 2%']})
-	];
-	gulp.src(path.styleSrc)
-		.pipe(sass({outputStyle: 'compressed'}))
-		.pipe(postcss(processors))
-		.pipe(gulp.dest(path.styleDest))
+  gulp.src(path.styleSrc)
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(postcss([
+      autoprefixer({browsers: ['last 2 version', '> 2%']})
+    ]))
+    .pipe(gulp.dest(path.styleDest))
 })
 
 gulp.task('js', function(){
-	gulp.src(path.jsSrc)
-		.pipe(react())
-		.pipe(gulp.dest(path.jsDest))
+  gulp.src(path.jsSrc)
+    .pipe(react())
+    .pipe(gulp.dest(path.jsDest))
 })
 
 gulp.watch(path.htmlWatch, ['html']);

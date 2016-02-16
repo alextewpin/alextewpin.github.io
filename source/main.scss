@@ -1,0 +1,175 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5em;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+}
+
+a {
+  color: #148FCC;
+  text-decoration: none;
+  border-bottom: 1px solid #148FCC;
+  &:hover {
+    color: #148FCC;
+    border-color: #148FCC;
+  }
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.page {
+  background-color: #fff;
+  max-width: 960px;
+  margin: 0px auto;
+  padding: 120px 0px 80px 80px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  padding: 0px 20px;
+}
+
+.title__title {
+  font-size: 32px;
+  line-height: 1.5em;
+}
+
+.title__subtitle {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.nav {
+  margin-top: 40px;
+  padding: 0px 20px;
+  display: flex;
+}
+
+.nav__button {
+  color: black;
+  border: 2px solid black;
+  padding: 4px 8px;
+  cursor: pointer;
+  &:not(:first-child) {
+    border-left: none;
+  }
+  &:hover {
+    color: black;
+    border-color: black;
+    background-color: #DDD;
+  }
+}
+
+.nav__button_selected {
+  color: white;
+  background-color: black;
+  cursor: default;
+  &:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+  }
+}
+
+.lang {
+  width: 160px;
+  flex-shrink: 0;
+}
+
+.feed-block {
+  display: flex;
+}
+
+.feed-block__projects {
+  min-width: 1px;
+  width: 100%;
+}
+
+.feed-block__year-container {
+  margin-top: 28px;
+  width: 160px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.feed-block__year {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  padding: 4px 8px;
+}
+
+.feed-block__project {
+  margin-top: 28px;
+}
+
+.cv {
+  margin: 28px 20px 0px 20px;
+}
+
+.project {
+  padding: 0px 20px;
+  &.project_featured_true {
+    padding: 12px 20px;
+    border: 2px solid black;
+  }
+}
+
+.project__name-wrapper {
+  display: flex;
+}
+
+.project__name_featured_true {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin-bottom: 4px;
+}
+
+.footer {
+  margin: 40px 20px 0px 20px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.footer__years {
+  color: #999;
+}
+
+@media (max-width: 1200px) {
+  .page {
+    padding-right: 40px;
+  }
+  .feed-block__year-container {
+    width: 80px;
+  }
+}
+
+@media (max-width: 960px) {
+  .page {
+    padding: 40px 20px;
+  }
+  .feed-block {
+    flex-direction: column-reverse;
+  }
+  .feed-block__year-container {
+    flex-direction: row;
+    margin-left: 20px;
+  }
+  .lang {
+    display: none;
+  }
+}

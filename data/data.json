@@ -1,90 +1,77 @@
 {
-	"feed": [
-		{
-			"name_ru": "Прототипы, гайдлайны и верстка консоли оператора для Зекуриона",
-			"description_ru": "Зекурион занимается защитой крупных компаний от утечек информации. Продукты, ранее бывшие отдельными модулями были объединены в веб-приложение, где я полностью переработал, оформил и сверстал интерфейс. Кроме того, я разработал гайдлайны по которым программисты легко собирают новые страницы самостоятельно.",
-			"type": "main",
-			"date": "2015-09"
-		},
-		{
-			"description_ru": "Прошел <a target=\"_blank\" href=\"http://www.britishdesign.ru/programs/p/uxdesign/\">интенсив по UI/UX</a> в Британской высшей школе дизайна, где вместе с командой предложил концепт новой <a target=\"_blank\" href=\"http://project12480.tilda.ws/page36831.html\">главной страницы Яндекса</a>",
-			"type": "side",
-			"date": "2015-08"
-		},
-		{
-			"description_ru": "Прокачал JavaScript, написал <a href=\"https://mighty-magika.herokuapp.com\">Магику</a> — справочник по заклинаниям для Dungeons & Dragons",
-			"type": "side",
-			"date": "2015-05"
-		},
-		{
-			"description_ru": "Пришел на полный день в <a target=\"_blank\" href=\"http://www.zecurion.ru\">Зекурион</a>",
-			"type": "side",
-			"date": "2015-02"
-		},
-		{
-			"name_ru": "<a target=\"_blank\" href=\"http://xph1kv.axshare.com\">Редизайн сервиса по поиску произношений имен PronounceNames</a>",
-			"type": "main",
-			"date": "2014-12"
-		},
-		{
-			"description_ru": "Сделал интерактивную инфографику на D3 для <a target=\"_blank\" href=\"http://brainwashing.pro/dataviz-online\">курса по визуализации данных</a>",
-			"type": "side",
-			"date": "2014-11"
-		},
-		{
-			"name_ru": "<a target=\"_blank\" href=\"http://tdghok.axshare.com\">Интерфейс тренировки продаж</a> для Воркла",
-			"type": "main",
-			"date": "2014-08"
-		},
-		{
-			"description_ru": "Подучил Objective-C, спроектировал и написал <a href=\"https://github.com/alextewpin/tabula\">Табулу</a>, клиент Двача для iOS",
-			"type": "side",
-			"date": "2014-07"
-		},
-		{
-			"description_ru": "Начал работу в качестве независимого дизайнера",
-			"type": "side",
-			"date": "2014-02"
-		},
-		{
-			"name_ru": "<a target=\"_blank\" href=\"http://4vpm5v.axshare.com\">Мобильное приложение оплаты покупок с телефона PayQR</a>",
-			"type": "main",
-			"date": "2013-08"
-		},
-		{
-			"name_ru": "<a target=\"_blank\" href=\"http://jh3d26.axshare.com\">Интерфейс букмейкерского сайта «Восход»</a>",
-			"type": "main",
-			"date": "2013-05"
-		},
-		{
-			"description_ru": "Стал руководителем отдела дизайна в Ингениусе",
-			"type": "side",
-			"date": "2013-04"
-		},
-		{
-			"name_ru": "<a target=\"_blank\" href=\"http://6nmm9r.axshare.com\">Прототипы консоли оператора колл-центра</a> для Теле 2",
-			"type": "main",
-			"date": "2013-03"
-		},
-		{
-			"name_ru": "<a href=\"assets/files/blitzkrieg.pdf\">Экспертная оценка</a> и <a target=\"_blank\" href=\"http://kf4bar.axshare.com\">концепты</a> игры «Блицкриг 3» для Нивала",
-			"type": "main",
-			"date": "2012-11"
-		},
-		{
-			"description_ru": "Устроился дизайнером интерфейсов в <a target=\"_blank\" href=\"http://igsystems.ru\">Ингениус</a>",
-			"type": "side",
-			"date": "2012-05"
-		},
-		{
-			"description_ru": "Закончил двухлетнее обучение в <a target=\"_blank\" href=\"http://www.britishdesign.ru\">Британской высшей школе дизайна</a>",
-			"type": "side",
-			"date": "2011-06"
-		}
-	],
-	"about": [
-		"Делаю дизайн для продуктов, участвую в их разработке, иногда пишу код самостоятельно. Считаю, что хороший интерфейс в первую очередь быстрый. Знаю как расставлять приоритеты и что говорить разработчикам.",
-		"Живу и работаю в Москве.",
-		"Почта: <a href=\"mailto:alex.tewpin@gmail.com\">alex.tewpin@gmail.com</a>. Скайп: <a href=\"skype:alextewpin?chat\">alextewpin</a>"
-	]
+  "feed": [
+    {
+      "name_ru": "Прототипы, гайдлайны и верстка консоли оператора для Зекуриона",
+      "description_ru": "Зекурион занимается защитой крупных компаний от утечек информации. Продукты, ранее бывшие отдельными модулями были объединены в веб-приложение, где я полностью переработал, оформил и сверстал интерфейс. Кроме того, я разработал гайдлайны по которым программисты легко собирают новые страницы самостоятельно.",
+      "featured": true,
+      "date": "2015-09"
+    },
+    {
+      "name_ru": "Прошел <a target=\"_blank\" href=\"http://www.britishdesign.ru/programs/p/uxdesign/\">интенсив по UI/UX</a> в Британской высшей школе дизайна, где вместе с командой предложил концепт новой <a target=\"_blank\" href=\"http://project12480.tilda.ws/page36831.html\">главной страницы Яндекса</a>",
+      "date": "2015-08"
+    },
+    {
+      "name_ru": "Прокачал JavaScript, написал <a href=\"https://mighty-magika.herokuapp.com\">Магику</a> — справочник по заклинаниям для Dungeons & Dragons",
+      "featured": true,
+      "date": "2015-05"
+    }, 
+    {
+      "name_ru": "Пришел на полный день в <a target=\"_blank\" href=\"http://www.zecurion.ru\">Зекурион</a>",
+      "date": "2015-02"
+    },
+    {
+      "name_ru": "<a target=\"_blank\" href=\"http://xph1kv.axshare.com\">Редизайн сервиса по поиску произношений имен PronounceNames</a>",
+      "date": "2014-12"
+    },
+    {
+      "name_ru": "Сделал интерактивную инфографику на D3 для <a target=\"_blank\" href=\"http://brainwashing.pro/dataviz-online\">курса по визуализации данных</a>",
+      "date": "2014-11"
+    },
+    {
+      "name_ru": "<a target=\"_blank\" href=\"http://tdghok.axshare.com\">Интерфейс тренировки продаж</a> для Воркла",
+      "date": "2014-08"
+    },
+    {
+      "name_ru": "Подучил Objective-C, спроектировал и написал <a href=\"https://github.com/alextewpin/tabula\">Табулу</a>, клиент Двача для iOS",
+      "featured": true,
+      "date": "2014-07"
+    },
+    {
+      "name_ru": "Начал работу в качестве независимого дизайнера",
+      "date": "2014-02"
+    },
+    {
+      "name_ru": "<a target=\"_blank\" href=\"http://4vpm5v.axshare.com\">Мобильное приложение оплаты покупок с телефона PayQR</a>",
+      "date": "2013-08"
+    },
+    {
+      "name_ru": "<a target=\"_blank\" href=\"http://jh3d26.axshare.com\">Интерфейс букмейкерского сайта «Восход»</a>",
+      "date": "2013-05"
+    },
+    {
+      "name_ru": "Стал руководителем отдела дизайна в Ингениусе",
+      "date": "2013-04"
+    },
+    {
+      "name_ru": "<a target=\"_blank\" href=\"http://6nmm9r.axshare.com\">Прототипы консоли оператора колл-центра</a> для Теле 2",
+      "date": "2013-03"
+    },
+    {
+      "name_ru": "<a href=\"assets/files/blitzkrieg.pdf\">Экспертная оценка</a> и <a target=\"_blank\" href=\"http://kf4bar.axshare.com\">концепты</a> игры «Блицкриг 3» для Нивала",
+      "date": "2012-11"
+    },
+    {
+      "name_ru": "Устроился дизайнером интерфейсов в <a target=\"_blank\" href=\"http://igsystems.ru\">Ингениус</a>",
+      "date": "2012-05"
+    },
+    {
+      "name_ru": "Закончил двухлетнее обучение в <a target=\"_blank\" href=\"http://www.britishdesign.ru\">Британской высшей школе дизайна</a>",
+      "date": "2011-06"
+    }
+  ],
+  "about": [
+    "Делаю дизайн для продуктов, участвую в их разработке, иногда пишу код самостоятельно. Считаю, что хороший интерфейс в первую очередь быстрый. Знаю как расставлять приоритеты и что говорить разработчикам.",
+    "Живу и работаю в Москве.",
+    "Почта: <a href=\"mailto:alex.tewpin@gmail.com\">alex.tewpin@gmail.com</a>. Скайп: <a href=\"skype:alextewpin?chat\">alextewpin</a>"
+  ]
 }
