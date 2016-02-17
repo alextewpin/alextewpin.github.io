@@ -1,12 +1,2 @@
-### src ###
-ignore
-
-### npm ###
 node_modules
-
-### Sass ###
-.sass-cache
-*.css.map
-
-### OSX ###
 .DS_Store

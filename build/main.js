@@ -47,7 +47,7 @@ var App = React.createClass({displayName: "App",
           React.createElement("div", {className: "header"}, 
             React.createElement("div", {className: "title"}, 
               React.createElement("div", {className: "title__title"}, "Александр Тюпин"), 
-              React.createElement("div", {className: "title__subtitle"}, "Дизайнер интерфейсов"), 
+              React.createElement("div", {className: "title__subtitle"}, "Фронтенд-разработчик"), 
               React.createElement("div", {className: "title__about"}, 
                 data.about.map(function(p){
                   return React.createElement("p", {dangerouslySetInnerHTML: {__html: p}})
@@ -56,10 +56,10 @@ var App = React.createClass({displayName: "App",
             ), 
             React.createElement("div", {className: "lang"}, " ")
           ), 
-          /*<div className="nav">
-            <Link to='feed/?' activeClassName='nav__button_selected' className='nav__button'>Свершения</Link>
-            <Link to='cv/?' activeClassName='nav__button_selected' className='nav__button'>Резюме</Link>
-          </div>*/
+          React.createElement("div", {className: "nav"}, 
+            React.createElement(Link, {to: "feed/?", activeClassName: "nav__button_selected", className: "nav__button"}, "Свершения"), 
+            React.createElement(Link, {to: "cv/?", activeClassName: "nav__button_selected", className: "nav__button"}, "Резюме")
+          ), 
           React.createElement(RouteHandler, React.__spread({},  this.state)), 
           React.createElement("div", {className: "footer"}, 
             React.createElement("div", {className: "footer__years"}, "2011...", currentYear), 
@@ -101,9 +101,7 @@ var Feed = React.createClass({displayName: "Feed",
 var CV = React.createClass({displayName: "CV",
   render: function() {
     return (
-      React.createElement("div", {className: "cv"}, 
-        "Резюме пока не очень-то и нужно."
-      )
+      React.createElement("div", {className: "cv"}, "Лежит на ", React.createElement("a", {href: "http://hh.ru/resume/74922af8ff011c115a0039ed1f535578577a59"}, "Хедхантере"), ".")
     )
   }
 })

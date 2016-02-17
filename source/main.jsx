@@ -47,7 +47,7 @@ var App = React.createClass({
           <div className="header">
             <div className="title">
               <div className="title__title">Александр Тюпин</div>
-              <div className="title__subtitle">Дизайнер интерфейсов</div>
+              <div className="title__subtitle">Фронтенд-разработчик</div>
               <div className="title__about">
                 {data.about.map(function(p){
                   return <p dangerouslySetInnerHTML={{__html: p}}></p>
@@ -56,10 +56,10 @@ var App = React.createClass({
             </div>
             <div className="lang">&nbsp;</div>
           </div>
-          {/*<div className="nav">
+          <div className="nav">
             <Link to='feed/?' activeClassName='nav__button_selected' className='nav__button'>Свершения</Link>
             <Link to='cv/?' activeClassName='nav__button_selected' className='nav__button'>Резюме</Link>
-          </div>*/}
+          </div>
           <RouteHandler {...this.state}/>
           <div className="footer">
             <div className="footer__years">2011...{currentYear}</div>
@@ -101,9 +101,7 @@ var Feed = React.createClass({
 var CV = React.createClass({
   render: function() {
     return (
-      <div className="cv">
-        Резюме пока не очень-то и нужно.
-      </div>
+      <div className="cv">Лежит на <a href="http://hh.ru/resume/74922af8ff011c115a0039ed1f535578577a59">Хедхантере</a>.</div>
     )
   }
 })
