@@ -9,15 +9,25 @@ $accent__text__c: #FFF;
 
 $footer__text__c: #999;
 
+$font__html: 90%;
+$font__title: 2.2rem;
+$font__subtitle: 1.25rem;
+$font__footer: 0.85rem;
+
+$line-height: 1.5em;
+
 html, body {
   margin: 0px;
   padding: 0px;
 }
 
+html {
+  font-size: $font__html;
+}
+
 body {
   color: $text__c;
-  font-size: 14px;
-  line-height: 1.5em;
+  line-height: $line-height;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
 }
 
@@ -52,13 +62,13 @@ a {
 }
 
 .title__title {
-  font-size: 32px;
-  line-height: 1.5em;
+  font-size: $font__title;
+  line-height: $line-height;
 }
 
 .title__subtitle {
-  font-size: 18px;
-  line-height: 1.5em;
+  font-size: $font__subtitle;
+  line-height: $line-height;
 }
 
 .nav {
@@ -144,16 +154,16 @@ a {
 }
 
 .project__name_featured_true {
-  font-size: 18px;
-  line-height: 1.5em;
+  font-size: $font__subtitle;
+  line-height: $line-height;
   margin-bottom: 4px;
 }
 
 .footer {
   margin: 40px 20px 0px 20px;
   width: 100%;
-  font-size: 12px;
-  line-height: 1.5em;
+  font-size: $font__footer;
+  line-height: $line-height;
 }
 
 .footer__years {
