@@ -138,7 +138,7 @@ var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
   if (xhr.readyState === 4) {
     if (xhr.status === 200) {
-      data = xhr.response;
+      data = JSON.parse(xhr.response);
       ReactRouter.run(routes, function (Handler) {
         React.render(<Handler />, document.body);
       });
@@ -148,5 +148,4 @@ xhr.onreadystatechange = function() {
   }
 }
 xhr.open("GET", "data/data.json");
-xhr.responseType = "json";
 xhr.send();
