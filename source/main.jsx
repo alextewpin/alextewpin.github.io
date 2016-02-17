@@ -135,7 +135,6 @@ var routes = (
 );
 
 var xhr = new XMLHttpRequest();
-xhr.responseType = "json";
 xhr.onreadystatechange = function() {
   if (xhr.readyState === 4) {
     if (xhr.status === 200) {
@@ -149,4 +148,5 @@ xhr.onreadystatechange = function() {
   }
 }
 xhr.open("GET", "data/data.json");
+xhr.responseType = "json";
 xhr.send();
