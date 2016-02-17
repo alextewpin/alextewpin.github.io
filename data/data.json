@@ -15,7 +15,7 @@
       "date": "2015-05"
     },
     {
-      "name_ru": "<a href=\"http://alextewpin.github.io/magika/\">Магика</a>, справочник по заклинаниям, монстрам и классам Dungeons & Dragons",
+      "name_ru": "<a target=\"_blank\" href=\"http://alextewpin.github.io/magika/\">Магика</a>, справочник по заклинаниям, монстрам и классам Dungeons & Dragons",
       "description_ru": "Приложение сделано для себя и друзей и рассчитано на мобильные устройства. Фронтенд написан на React, бэкенд не используется.",
       "featured": true,
       "date": "2015-05"
