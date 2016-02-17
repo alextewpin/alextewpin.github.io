@@ -50,7 +50,7 @@ var App = React.createClass({displayName: "App",
               React.createElement("div", {className: "title__subtitle"}, "Фронтенд-разработчик"), 
               React.createElement("div", {className: "title__about"}, 
                 data.about.map(function(p){
-                  return React.createElement("p", {dangerouslySetInnerHTML: {__html: p}})
+                  return React.createElement("div", {className: "title__about-p", dangerouslySetInnerHTML: {__html: p}})
                 })
               )
             ), 

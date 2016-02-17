@@ -10,11 +10,13 @@ $accent__text__c: #FFF;
 $footer__text__c: #999;
 
 $font__html: 90%;
+$font__html_mobile: 110%;
 $font__title: 2.2rem;
 $font__subtitle: 1.25rem;
 $font__footer: 0.85rem;
 
 $line-height: 1.5em;
+$line-height__title: 1.2em;
 
 html, body {
   margin: 0px;
@@ -29,6 +31,7 @@ body {
   color: $text__c;
   line-height: $line-height;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -63,12 +66,17 @@ a {
 
 .title__title {
   font-size: $font__title;
-  line-height: $line-height;
+  line-height: $line-height__title;
 }
 
 .title__subtitle {
+  margin: 4px 0px 20px 0px;
   font-size: $font__subtitle;
-  line-height: $line-height;
+  line-height: $line-height__title;
+}
+
+.title__about-p {
+  margin: 12px 0px;
 }
 
 .nav {
@@ -180,6 +188,9 @@ a {
 }
 
 @media (max-width: 960px) {
+  html {
+    font-size: $font__html_mobile;
+  }
   .page {
     padding: 40px 20px;
   }

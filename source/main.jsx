@@ -50,7 +50,7 @@ var App = React.createClass({
               <div className="title__subtitle">Фронтенд-разработчик</div>
               <div className="title__about">
                 {data.about.map(function(p){
-                  return <p dangerouslySetInnerHTML={{__html: p}}></p>
+                  return <div className="title__about-p" dangerouslySetInnerHTML={{__html: p}}></div>
                 })}
               </div>
             </div>
