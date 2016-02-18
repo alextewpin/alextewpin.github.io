@@ -110,11 +110,11 @@ var Project = React.createClass({
   render: function() {
     var typeClass = "project";
     if (this.props.featured) {
-      typeClass = typeClass + " project_featured_true";
+      typeClass = typeClass + " project_featured";
     }
     var nameClass = "project__name";
     if (this.props.featured) {
-      nameClass = nameClass + " project__name_featured_true";
+      nameClass = nameClass + " project__name_featured";
     }
     return (
       <div className={typeClass}>
