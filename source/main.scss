@@ -60,22 +60,34 @@ a {
   justify-content: space-between;
 }
 
-.title {
+.me {
   padding: 0px 20px;
 }
 
-.title__title {
+.me__header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.me__photo {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.me__title {
   font-size: $font__title;
   line-height: $line-height__title;
 }
 
-.title__subtitle {
-  margin: 4px 0px 20px 0px;
+.me__subtitle {
+  margin-top: 4px;
   font-size: $font__subtitle;
   line-height: $line-height__title;
 }
 
-.title__about-p {
+.me__about-p {
   margin: 12px 0px;
 }
 
@@ -193,6 +205,10 @@ a {
   }
   .page {
     padding: 40px 20px;
+  }
+  .me__photo {
+    width: 80px;
+    height: 80px;
   }
   .feed-block {
     flex-direction: column-reverse;

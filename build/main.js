@@ -45,12 +45,17 @@ var App = React.createClass({displayName: "App",
       React.createElement("div", {className: "wrapper"}, 
         React.createElement("div", {className: "page"}, 
           React.createElement("div", {className: "header"}, 
-            React.createElement("div", {className: "title"}, 
-              React.createElement("div", {className: "title__title"}, "Александр Тюпин"), 
-              React.createElement("div", {className: "title__subtitle"}, "Фронтенд-разработчик"), 
-              React.createElement("div", {className: "title__about"}, 
+            React.createElement("div", {className: "me"}, 
+              React.createElement("div", {className: "me__header"}, 
+                React.createElement("img", {className: "me__photo", src: "assets/images/me.jpg"}), 
+                React.createElement("div", null, 
+                  React.createElement("div", {className: "me__title"}, "Александр Тюпин"), 
+                  React.createElement("div", {className: "me__subtitle"}, "Фронтенд-разработчик")
+                )
+              ), 
+              React.createElement("div", {className: "me__about"}, 
                 data.about.map(function(p){
-                  return React.createElement("div", {className: "title__about-p", dangerouslySetInnerHTML: {__html: p}})
+                  return React.createElement("div", {className: "me__about-p", dangerouslySetInnerHTML: {__html: p}})
                 })
               )
             ), 

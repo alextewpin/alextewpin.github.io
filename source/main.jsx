@@ -45,12 +45,17 @@ var App = React.createClass({
       <div className="wrapper">
         <div className="page">
           <div className="header">
-            <div className="title">
-              <div className="title__title">Александр Тюпин</div>
-              <div className="title__subtitle">Фронтенд-разработчик</div>
-              <div className="title__about">
+            <div className="me">
+              <div className="me__header">
+                <img className="me__photo" src="assets/images/me.jpg" />
+                <div>
+                  <div className="me__title">Александр Тюпин</div>
+                  <div className="me__subtitle">Фронтенд-разработчик</div>
+                </div>
+              </div>
+              <div className="me__about">
                 {data.about.map(function(p){
-                  return <div className="title__about-p" dangerouslySetInnerHTML={{__html: p}}></div>
+                  return <div className="me__about-p" dangerouslySetInnerHTML={{__html: p}}></div>
                 })}
               </div>
             </div>
