@@ -221,3 +221,12 @@ a {
     display: none;
   }
 }
+
+@media (max-width: 360px) {
+  .me__header {
+    flex-direction: column;
+  }
+  .me__photo {
+    margin-bottom: 16px;
+  }
+}
