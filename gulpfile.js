@@ -26,7 +26,7 @@ gulp.task('sass', function(){
   gulp.src(path.styleSrc)
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(postcss([
-      autoprefixer({browsers: ['last 2 version', '> 2%']})
+      autoprefixer({browsers: ['last 2 version', '> 1%']})
     ]))
     .pipe(gulp.dest(path.styleDest))
 })
