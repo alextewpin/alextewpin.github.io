@@ -2,7 +2,7 @@
   "name": "alextewpin.github.io",
   "version": "0.2.1",
   "dependencies": {
-    "react": "^0.13.3"
+    "react": "^16.13.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
